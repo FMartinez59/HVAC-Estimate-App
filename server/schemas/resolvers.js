@@ -8,7 +8,7 @@ const resolvers = {
       if (context.user) {
         const user = await User.findById(context.user.id).populate({
           path: 'orders.products',
-          populate: 'category',
+          populate: 'Products',
         });
 
         user.orders.sort((a, b) => b.purchaseDate - a.purchaseDate);
