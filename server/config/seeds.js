@@ -1,37 +1,33 @@
 const db = require("./connection");
-const { User, Product } = require("../models");
+const { User, Estimate } = require("../models");
 
 db.once("open", async () => {
-  await Product.deleteMany();
+  await Estimate.deleteMany();
 
-  const products = await Product.insertMany([
+  const estimates = await Estimate.insertMany([
     {
       type: "Air Handler",
       ton: 5,
-      sqft: 2400,
       cabinet: "yes"
     },
     {
       type: "Furnace",
       ton: 2,
-      sqft: 1400,
       cabinet: "yes"
     },
     {
       type: "Furnace",
       ton: 3,
-      sqft: 2000,
       cabinet: "yes"
     },
     {
       type: "Air Handler",
       ton: 8,
-      sqft: 3400,
       cabinet: "yes"
     },
   ]);
 
-  console.log("products seeded");
+  console.log("estimates seeded");
 
   await User.create({
     firstName: "Pamela",
@@ -40,7 +36,7 @@ db.once("open", async () => {
     password: "password12345",
     orders: [
       {
-        products: [products[0]._id, products[0]._id, products[1]._id],
+        estimates: [estimates[0]._id, estimates[0]._id, estimates[1]._id],
       },
     ],
   });
