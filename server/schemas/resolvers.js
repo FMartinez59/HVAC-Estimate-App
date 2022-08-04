@@ -1,5 +1,5 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { User, Product, Category } = require('../models');
+const { User, Estimate, Category } = require('../models');
 const { signToken } = require('../utils/auth');
 
 const resolvers = {
@@ -7,8 +7,8 @@ const resolvers = {
     user: async (parent, args, context) => {
       if (context.user) {
         const user = await User.findById(context.user.id).populate({
-          path: 'orders.products',
-          populate: 'Products',
+          path: 'orders.estimates',
+          populate: 'estimates',
         });
 
         user.orders.sort((a, b) => b.purchaseDate - a.purchaseDate);

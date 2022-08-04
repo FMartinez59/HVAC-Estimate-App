@@ -9,14 +9,14 @@ const productSchema = new Schema({
     required: true,
     min: 1,
   },
-  sqft: {
+  description: {
+    type: String,
+    required: true,
+  },
+  seer: {
     type: Number,
     required: true,
     min: 1,
-  },
-  cabinet:{
-    type:"string",
-    required: true
   }
 });
 

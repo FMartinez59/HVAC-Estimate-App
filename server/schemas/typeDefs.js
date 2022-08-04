@@ -7,21 +7,28 @@ const typeDefs = gql`
     user: User
   }
 
-  type Query {
-  Product( 
-      type: String!
-      ton: Int!
-      sqft: Int!
-      cabinet: String!
-      ):
+  type Estimate {
+    _id: ID
+    type: String!
+    ton: Int!
+    description: Int!
+    seer: Int!
   }
-
+  type Order {
+    _id: ID
+    purchaseDate: String
+    estimates: [Estimate]
+  }
   type User {
     firstName: String
     lastName: String
     email: String
   }
-
+  type Query {
+    user: User
+    order(_id: ID!): Order
+    Estimate(_id: ID!): Estimate
+  }
   type Mutation {
     addUser(
       firstName: String!
@@ -35,7 +42,7 @@ const typeDefs = gql`
       email: String
       password: String
     ): User
-    updateProduct(_id: ID!, quantity: Int!): Product
+    updateEstimate(_id: ID!, quantity: Int!): Estimate
     login(email: String!, password: String!): Auth
   }
 `;
