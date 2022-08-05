@@ -1,17 +1,17 @@
-
-       "2.0 80% furnace": { 
-       "type":"Furnace",
-       "tons":"2.0",
-       "description":"Includes 2.0 Ton outdoor condenser, Single stage compressor, Non variable speed blower motor, R410A coil, Honeywell T4 thermostat and 10 year warranty on parts and labor.",
-       "seer":"14",
-       "price":"6000"
-       },
-        "3.0 80% furnace": {
-        "type":"Furncace",
-        "tons":"3.0",
-        "description":"Includes 3.0 Ton outdoor condenser, Single stage compressor, Non variable speed blower motor, R410A coil, Honeywell T4 thermostat and 10 year warranty on parts and labor.",
+{
+        "2.0 80% furnace": { 
+        "type":"Furnace",
+        "tons":"2.0",
+        "description":"Includes 2.0 Ton outdoor condenser, Single stage compressor, Non variable speed blower motor, R410A coil, Honeywell T4 thermostat and 10 year warranty on parts and labor.",
         "seer":"14",
-        "price":"7000"
+        "price":"6000"
+        },
+         "3.0 80% furnace": {
+         "type":"Furncace",
+         "tons":"3.0",
+         "description":"Includes 3.0 Ton outdoor condenser, Single stage compressor, Non variable speed blower motor, R410A coil, Honeywell T4 thermostat and 10 year warranty on parts and labor.",
+         "seer":"14",
+         "price":"7000"
         },
           "4.0 80% furnace": {
           "type":"Furnace",
@@ -55,6 +55,7 @@
           "seer":"14",
           "price":"10500"
         }
+      }
                 
 
 
