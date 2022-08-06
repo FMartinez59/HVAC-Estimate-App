@@ -14,21 +14,25 @@ const typeDefs = gql`
     description: Int!
     seer: Int!
   }
+  
   type Order {
     _id: ID
     purchaseDate: String
     estimates: [Estimate]
   }
+  
   type User {
     firstName: String
     lastName: String
     email: String
   }
+  
   type Query {
     user: User
     order(_id: ID!): Order
     Estimate(_id: ID!): Estimate
   }
+  
   type Mutation {
     addUser(
       firstName: String!
