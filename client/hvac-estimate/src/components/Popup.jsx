@@ -24,7 +24,7 @@ function Popup(props) {
         How many tons is your current system?
         </label>
         <div class="relative">
-          <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="tonnage">
+          <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="tons">
             <option>2.0</option>
             <option>3.0</option>
             <option>4.0</option>
@@ -40,7 +40,7 @@ function Popup(props) {
           What cabinet is your system?
         </label>
         <div class="relative">
-          <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-4 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="cabinet">
+          <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-4 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="type">
             <option>Air Handler</option>
             <option>Furnace</option>
           </select>
