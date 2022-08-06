@@ -1,5 +1,5 @@
 import React from "react";
-import { HiArrowNarrowRight } from "react-icons/hi";
+// import { HiArrowNarrowRight } from "react-icons/hi";
 import Popup from "./Popup";
 import { useState } from 'react';
 const Home = () => {
