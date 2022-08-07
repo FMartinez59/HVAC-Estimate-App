@@ -21,6 +21,7 @@
   "homepage": "https://github.com/FMartinez59/HVAC-Estimate-App#readme",
   "dependencies": {
     "@apollo/client": "^3.6.9",
+    "@apollo/react-hooks": "^4.0.0",
     "apollo-server": "^3.5.0",
     "apollo-server-errors": "^3.3.0",
     "bcryptjs": "^2.4.3",
@@ -28,6 +29,7 @@
     "graphql": "^15.7.2",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.0.14",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "react-router-dom": "^6.3.0"
   }
 }
