@@ -8,5 +8,10 @@
     "mongoose": "^6.5.1",
     "node": "^18.7.0",
     "react": "^18.2.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "watch": "nodemon",
+    "seed": "node config/seeds.js"
   }
 }

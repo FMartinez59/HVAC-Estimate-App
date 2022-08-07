@@ -5,26 +5,7 @@ db.once("open", async () => {
   await Estimate.deleteMany();
 
   const estimates = await Estimate.insertMany([
-    {
-      type: "Air Handler",
-      ton: 5,
-      cabinet: "yes"
-    },
-    {
-      type: "Furnace",
-      ton: 2,
-      cabinet: "yes"
-    },
-    {
-      type: "Furnace",
-      ton: 3,
-      cabinet: "yes"
-    },
-    {
-      type: "Air Handler",
-      ton: 8,
-      cabinet: "yes"
-    },
+    // will add data here later 
   ]);
 
   console.log("estimates seeded");
