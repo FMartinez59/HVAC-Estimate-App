@@ -8,9 +8,13 @@ import { ApolloProvider } from '@apollo/react-hooks';
 import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(
+  <ApolloProvider client={client}>
+    <BrowserRouter>
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
+  </React.StrictMode>
+  </BrowserRouter>
+  </ApolloProvider>,
   document.getElementById('root')
 );
 
