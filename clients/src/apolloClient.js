@@ -5,7 +5,7 @@ const httpLink = createHttpLink({
     uri: "hhtp://localhost:5000"
 });
 
-const authLink = setContext((_, { header }) => {
+const authLink = setContext((_, { headers }) => {
     return {
         headers: {
             ...headers,

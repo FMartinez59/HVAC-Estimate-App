@@ -22,6 +22,9 @@
   "dependencies": {
     "@apollo/client": "^3.6.9",
     "@apollo/react-hooks": "^4.0.0",
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@mui/material": "^5.9.3",
     "apollo-server": "^3.5.0",
     "apollo-server-errors": "^3.3.0",
     "bcryptjs": "^2.4.3",
