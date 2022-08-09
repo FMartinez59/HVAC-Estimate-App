@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const { Schema } = mongoose;
 
-const productSchema = new Schema({
+const estimateSchema = new Schema({
   type: { type: String, enum: ["Air Handler", "Furnace"] },
   ton: {
     type: Number,
@@ -17,9 +17,14 @@ const productSchema = new Schema({
     type: Number,
     required: true,
     min: 1,
+  },
+  price: {
+    type: Number,
+    required: true,
+    min: 1,
   }
 });
 
-const Product = mongoose.model("Product", productSchema);
+const Estimate = mongoose.model("Estimate", estimateSchema);
 
-module.exports = Product;
+module.exports = Estimate;
