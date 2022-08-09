@@ -4,7 +4,6 @@ import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import Logo from "../assets/FMJ.png";
 import { Link } from "react-scroll";
-import Login from "../pages/Login";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
