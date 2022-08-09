@@ -1,5 +1,5 @@
 const db = require("./connection");
-const { User, Estimate } = require("../models");
+const { Profile, Estimate } = require("../models");
 
 db.once("open", async () => {
   await Estimate.deleteMany();
@@ -10,7 +10,7 @@ db.once("open", async () => {
 
   console.log("estimates seeded");
 
-  await User.create({
+  await Profile.create({
     firstName: "Pamela",
     lastName: "Washington",
     email: "pamela@testmail.com",
@@ -22,7 +22,7 @@ db.once("open", async () => {
     ],
   });
 
-  await User.create({
+  await Profile.create({
     firstName: "Elijah",
     lastName: "Holt",
     email: "eholt@testmail.com",
