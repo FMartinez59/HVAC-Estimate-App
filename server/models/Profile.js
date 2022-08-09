@@ -1,4 +1,4 @@
-const estimate = require("./Estimates");
+// const { estimate } = require("./Estimate");
 const { Schema, model } = require('mongoose');
 const bcrypt = require('bcrypt');
 
@@ -20,12 +20,10 @@ const profileSchema = new Schema({
     required: true,
     minlength: 5,
   },
-  estimate: [
-    {
-      type: String,
-      trim: true,
-    },
-  ],
+  estimate: {
+    type: Schema.Types.ObjectId,
+      ref: 'Estimate'
+  }
 });
 
 // set up pre-save middleware to create password

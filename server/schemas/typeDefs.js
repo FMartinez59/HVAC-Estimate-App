@@ -6,7 +6,7 @@ const typeDefs = gql`
     firstName: String
     lastName: String
     email: String
-    password: String
+    estimate: Estimate
   }
   type Estimate {
     type: String!
@@ -17,8 +17,9 @@ const typeDefs = gql`
   }
 
   type Query {
-    Profiles: [Profile]
-    Estimates: [Estimate]
+    profiles: [Profile]
+    profile(profileId: ID!): Profile
+    estimate(estimateId: ID!): Estimate
   }
 `;
 
