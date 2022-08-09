@@ -17,7 +17,7 @@ const typeDefs = gql`
   }
 
   type Query {
-    Profiles: [User]
+    Profiles: [Profile]
     Estimates: [Estimate]
   }
 `;

@@ -14,7 +14,7 @@ const resolvers = {
     },
     // By adding context to our query, we can retrieve the logged in user without specifically searching for them
     me: async (parent, args, context) => {
-      if (context.user) {
+      if (context.profile) {
         return Profile.findOne({ _id: context.user._id });
       }
       throw new AuthenticationError('You need to be logged in!');
@@ -66,15 +66,15 @@ const resolvers = {
     // Set up mutation so a logged in user can only remove their profile and no one else's
     removeProfile: async (parent, args, context) => {
       if (context.user) {
-        return Profile.findOneAndDelete({ _id: context.user._id });
+        return Profile.findOneAndDelete({ _id: context.profile._id });
       }
       throw new AuthenticationError('You need to be logged in!');
     },
     // Make it so a logged in user can only remove a skill from their own profile
     removeEstimate: async (parent, { estimate }, context) => {
-      if (context.user) {
+      if (context.profile) {
         return Profile.findOneAndUpdate(
-          { _id: context.user._id },
+          { _id: context.profile._id },
           { $pull: { estimates: estimate } },
           { new: true }
         );
