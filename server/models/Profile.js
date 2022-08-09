@@ -1,4 +1,4 @@
-import { estimate } from "./Estimate"
+const estimate = require("./Estimates");
 const { Schema, model } = require('mongoose');
 const bcrypt = require('bcrypt');
 
