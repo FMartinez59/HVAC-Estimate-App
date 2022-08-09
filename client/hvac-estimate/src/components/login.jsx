@@ -2,8 +2,8 @@ import React from "react"
 import { useNavigation } from 'react-router-dom';
 
 const Login = () => {
-    const navigate = useNavigate();
-    const [FornState, setFormState] = useState({
+    const navigate = useNavigation();
+    const [formState, setFormState] = useState({
         login: true,
         email: '',
         password: '',
@@ -18,11 +18,11 @@ const Login = () => {
             <div className="flex flex-column">
                 {!setFormState.login && (
                     <input
-                    value={formstate.name}
+                    value={formState.name}
                     onChange={(e) =>
                         setFormState({
                             ...formState,
-                            name: e.target.valuer
+                            name: e.target.value
                         })
                     }
                     type="text"
