@@ -12,6 +12,6 @@
   "scripts": {
     "start": "node server.js",
     "watch": "nodemon",
-    "seed": "node seeder/seed.js"
+    "seed": "node seeders/seed.js"
   }
 }
