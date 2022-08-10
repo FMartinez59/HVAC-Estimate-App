@@ -1,7 +1,7 @@
 [
   {
     "name": "2.0 ton 80% furnace 14 seer",
-    "type": "Furnace",
+    "system": "Furnace",
     "tons": "2.0",
     "description": "Includes 2.0 Ton outdoor condenser, Single stage compressor, Non variable speed blower motor, R410A coil, Honeywell T4 thermostat and 10 year warranty on parts and labor.",
     "seer": "14",
@@ -9,7 +9,7 @@
   },
   {
     "name": "3.0 ton 80% furnace 14 seer",
-    "type": "Furnace",
+    "system": "Furnace",
     "tons": "3.0",
     "description": "Includes 3.0 Ton outdoor condenser, Single stage compressor, Non variable speed blower motor, R410A coil, Honeywell T4 thermostat and 10 year warranty on parts and labor.",
     "seer": "14",
@@ -17,7 +17,7 @@
   },
   {
     "name": "4.0 ton 80% furnace 14 seer",
-    "type": "Furnace",
+    "system": "Furnace",
     "tons": "4.0",
     "description": "Includes 4.0 Ton outdoor condenser, Single stage compressor, Non variable speed blower motor, R410A coil, Honeywell T4 thermostat and 10 year warranty on parts and labor.",
     "seer": "14",
@@ -25,7 +25,7 @@
   },
   {
     "name": "5.0 ton 80% furnace 14 seer",
-    "type": "Furnace",
+    "system": "Furnace",
     "tons": "5.0",
     "description": "Includes 5.0 Ton outdoor condenser, Single stage compressor, Non variable speed blower motor, R410A coil, Honeywell T4 thermostat and 10 year warranty on parts and labor.",
     "seer": "14",
@@ -33,7 +33,7 @@
   },
   {
     "name": "2.0 ton air handler 14 seer",
-    "type": "Air Handler",
+    "system": "Air Handler",
     "tons": "2.0",
     "description": "Includes 2.0 Ton heat pump, Single stage compressor, Non variable speed blower motor, R410A coil , Nest thermostat and 10 year warranty on parts and labor.",
     "seer": "14",
@@ -41,7 +41,7 @@
   },
   {
     "name": "3.0 ton air handler 14 seer",
-    "type": "Air Handler",
+    "system": "Air Handler",
     "tons": "3.0",
     "description": "Includes 3.0 Ton heat pump, Single stage compressor, Non variable speed blower motor, R410A coil, Nest thermostat and 10 year warranty on parts and labor.",
     "seer": "14",
@@ -49,7 +49,7 @@
   },
   {
     "name": "4.0 ton air handler 14 seer",
-    "type": "Air Handler",
+    "system": "Air Handler",
     "tons": "4.0",
     "description": "Includes 4.0 Ton heat pump, Single stage compressor, Non variable speed blower motor, R410A coil, Nest thermostat and 10 year warranty on parts and labor.",
     "seer": "14",
@@ -57,7 +57,7 @@
   },
   {
     "name": "5.0 ton air handler 14 seer",
-    "type": "Air Handler",
+    "system": "Air Handler",
     "tons": "5.0",
     "description": "Includes 5.0 Ton heat pump, Single stage compressor, Non variable speed blower motor, R410A coil, Nest thermostat and 10 year warranty on parts and labor.",
     "seer": "14",
@@ -65,7 +65,7 @@
   },
   {
     "name": "2.0 ton 80% furnace 16 seer",
-    "type": "Furnace",
+    "system": "Furnace",
     "tons": "2.0",
     "description": "Includes 2.0 Ton outdoor condenser, Single stage compressor, Non variable speed blower motor, R410A coil, Honeywell T4 thermostat and 10 year warranty on parts and labor.",
     "seer": "16",
@@ -73,7 +73,7 @@
   },
   {
     "name": "3.0 ton 80% furnace 16 seer",
-    "type": "Furnace",
+    "system": "Furnace",
     "tons": "3.0",
     "description": "Includes 3.0 Ton outdoor condenser, Single stage compressor, Non variable speed blower motor, R410A coil, Honeywell T4 thermostat and 10 year warranty on parts and labor.",
     "seer": "16",
@@ -81,7 +81,7 @@
   },
   {
     "name": "4.0 ton 80% furnace 16 seer",
-    "type": "Furnace",
+    "system": "Furnace",
     "tons": "4.0",
     "description": "Includes 4.0 Ton outdoor condenser, Single stage compressor, Non variable speed blower motor, R410A coil, Honeywell T4 thermostat and 10 year warranty on parts and labor.",
     "seer": "16",
@@ -89,7 +89,7 @@
   },
   {
     "name": "5.0 ton 80% furnace 16 seer",
-    "type": "Furnace",
+    "system": "Furnace",
     "tons": "5.0",
     "description": "Includes 5.0 Ton outdoor condenser, Single stage compressor, Non variable speed blower motor, R410A coil, Honeywell T4 thermostat and 10 year warranty on parts and labor.",
     "seer": "16",
@@ -97,7 +97,7 @@
   },
   {
     "name": "2.0 ton air handler 16 seer",
-    "type": "Air Handler",
+    "system": "Air Handler",
     "tons": "2.0",
     "description": "Includes 2.0 Ton heat pump, Single stage compressor, Non variable speed blower motor, R410A coil , Nest thermostat and 10 year warranty on parts and labor.",
     "seer": "16",
@@ -105,7 +105,7 @@
   },
   {
     "name": "3.0 ton air handler 16 seer",
-    "type": "Air Handler",
+    "system": "Air Handler",
     "tons": "3.0",
     "description": "Includes 3.0 Ton heat pump, Single stage compressor, Non variable speed blower motor, R410A coil, Nest thermostat and 10 year warranty on parts and labor.",
     "seer": "16",
@@ -113,7 +113,7 @@
   },
   {
     "name": "4.0 ton air handler 16 seer",
-    "type": "Air Handler",
+    "system": "Air Handler",
     "tons": "4.0",
     "description": "Includes 4.0 Ton heat pump, Single stage compressor, Non variable speed blower motor, R410A coil, Nest thermostat and 10 year warranty on parts and labor.",
     "seer": "16",
@@ -121,7 +121,7 @@
   },
   {
     "name": "5.0 ton air handler 16 seer",
-    "type": "Air Handler",
+    "system": "Air Handler",
     "tons": "5.0",
     "description": "Includes 5.0 Ton heat pump, Single stage compressor, Non variable speed blower motor, R410A coil, Nest thermostat and 10 year warranty on parts and labor.",
     "seer": "16",

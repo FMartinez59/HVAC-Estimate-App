@@ -1,6 +1,5 @@
 const { gql } = require("apollo-server-express");
 
-// TODO: Create type definitions for  `Product and `User` above the `Auth` type
 const typeDefs = gql`
   type Profile {
     firstName: String
@@ -9,11 +8,12 @@ const typeDefs = gql`
     estimate: Estimate
   }
   type Estimate {
-    type: String!
-    ton: Int!
-    description: String!
-    seer: Int!
-    price: Int!
+    name: String
+    system: string
+    tons: Int!
+    description: String
+    seer: Int
+    price: Int
   }
 
   type Query {
