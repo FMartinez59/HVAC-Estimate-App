@@ -9,7 +9,7 @@ const typeDefs = gql`
   }
   type Estimate {
     name: String
-    system: string
+    system: String
     tons: Int!
     description: String
     seer: Int
