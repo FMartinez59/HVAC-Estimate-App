@@ -2,10 +2,11 @@
   "name": "hvac-estimate-app",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "seed": "cd server && npm run seed",
+    "start": "node server/server.js"
   },
   "repository": {
     "type": "git",

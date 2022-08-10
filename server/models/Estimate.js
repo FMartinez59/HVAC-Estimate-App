@@ -1,30 +1,31 @@
-const mongoose = require("mongoose");
-
-const { Schema } = mongoose;
+const { Schema, model } = require('mongoose');
 
 const estimateSchema = new Schema({
-  type: { type: String, enum: ["Air Handler", "Furnace"] },
-  ton: {
+  name: {
+     type: String
+    },
+    system: {
+      type: String,
+      required: true
+    },
+  tons: {
     type: Number,
-    required: true,
-    min: 1,
+    required: true
   },
   description: {
     type: String,
-    required: true,
+    max: 100
   },
   seer: {
-    type: Number,
-    required: true,
-    min: 1,
+    type: Number
+    
   },
   price: {
-    type: Number,
-    required: true,
-    min: 1,
+    type: Number
+    
   }
 });
 
-const Estimate = mongoose.model("Estimate", estimateSchema);
+const Estimate = model('Estimate', estimateSchema);
 
 module.exports = Estimate;
