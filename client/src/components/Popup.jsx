@@ -1,4 +1,24 @@
 import React from "react";
+const data = require("../../Product.json")
+
+let type = "Furnace";
+let ton = "2.0"
+
+
+// let res = data.map(
+//     unit=> unit.type === type,
+//     console.log(unit) 
+// )
+const newData = []; 
+data.map(unit => {if (unit.type === type && unit.tons === ton){
+    newData.push(unit)
+} 
+}),
+console.log(newData)
+
+// console.log(res)
+
+
 
 export default function Popup({ visible, onClose, handleForm }) {
   // const handleOnClose = (e) => {
@@ -22,7 +42,6 @@ export default function Popup({ visible, onClose, handleForm }) {
             <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="system">
               <option>Furnace</option>
               <option>Air Handler</option>
-
             </select>
             <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
               <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
@@ -48,7 +67,7 @@ export default function Popup({ visible, onClose, handleForm }) {
 
         <div class="w-full px-3 mb-6 md:mb-0">
           <label class="block uppercase tracking-wide text-gray-700 text-s font-bold mb-0 mt-4" for="grid-state">
-            What effeciency are you looking for?
+            What efficiency are you looking for?
           </label>
           <div class="relative">
             <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
