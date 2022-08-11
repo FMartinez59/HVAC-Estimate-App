@@ -1,8 +1,4 @@
 import React, { useState } from "react";
-import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonLinesFill } from "react-icons/bs";
-import Logo from "../assets/FMJ.png";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
@@ -48,10 +44,7 @@ const Navbar = () => {
         </li>
       </ul>
 
-      {/* hamburger */}
-      <div onClick={handleClick} className="md:hidden z-10">
-        {!nav ? <FaBars /> : <FaTimes />}
-      </div>
+
 
       {/*Mobile menu  */}
       <ul

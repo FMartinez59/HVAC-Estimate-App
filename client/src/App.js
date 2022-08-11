@@ -7,7 +7,6 @@ import {
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import * as data from '../Product.json'
 import Home from './components/Home';
 import Profile from './pages/Profile';
 import Signup from './pages/Signup';
@@ -34,7 +33,7 @@ const client = new ApolloClient({
   link: authLink.concat(httpLink),
   cache: new InMemoryCache(),
 });
-console.log(data)
+
 function App() {
   return (
     <ApolloProvider client={client}>
