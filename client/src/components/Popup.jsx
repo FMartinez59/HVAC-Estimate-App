@@ -75,8 +75,10 @@ export default function Popup({ visible, onClose, handleForm }) {
           </div>
           <button id="submit-btn" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" type="submit">Submit</button>
         </div>
-
       </form>
     </div>
+    
   );
+  <div className="fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex items-center justify-center hidden"> We have what you are looking for! </div>
+    
 }
