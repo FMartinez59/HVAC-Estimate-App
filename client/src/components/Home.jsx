@@ -1,5 +1,6 @@
 // import { HiArrowNarrowRight } from "react-icons/hi";
 import Popup from "./Popup";
+
 import React, { useState } from 'react';
 const Home = () => {
   

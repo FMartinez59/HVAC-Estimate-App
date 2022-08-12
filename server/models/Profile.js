@@ -1,4 +1,4 @@
-// const { estimate } = require("./Estimate");
+const estimate = require("./Estimate");
 const { Schema, model } = require('mongoose');
 const bcrypt = require('bcrypt');
 

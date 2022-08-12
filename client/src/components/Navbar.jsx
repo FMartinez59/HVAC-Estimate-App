@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 
+
+
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
@@ -18,18 +20,13 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link to="login" smooth={true} duration={500}>
+          <Link to="Login" smooth={true} duration={500}>
             Login
           </Link>
         </li>
         <li>
-          <Link to="about" smooth={true} duration={500}>
-            About
-          </Link>
-        </li>
-        <li>
-          <Link to="skills" smooth={true} duration={500}>
-            Skills
+          <Link to="Signup" smooth={true} duration={500}>
+            Signup
           </Link>
         </li>
         <li>
