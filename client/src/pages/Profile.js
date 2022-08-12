@@ -11,12 +11,12 @@ const Profile = () => {
   const { profileId } = useParams();
 
   // If there is no `profileId` in the URL as a parameter, execute the `QUERY_ME` query instead for the logged in user's information
-  const { loading, data } = useQuery(
-    profileId ? QUERY_SINGLE_PROFILE:
-    {
-      variables: { profileId: profileId },
-    }
-  );
+  // const { loading, data } = useQuery(
+  //   profileId ? QUERY_SINGLE_PROFILE:
+  //   {
+  //     variables: { profileId: profileId },
+  //   }
+  // );
 
   // Check if data is returning from the `QUERY_ME` query, then the `QUERY_SINGLE_PROFILE` query
   const profile =  data?.profile || {};
@@ -42,15 +42,14 @@ const Profile = () => {
   return (
     <div>
       <h2 className="card-header">
-        {profileId ? `${profile.name}'s` : 'Your'} friends have endorsed these
-        estimate...
+        {profileId ? `${profile.name}'s` : 'Your'} 
       </h2>
 
    
 
-      <div className="my-4 p-4" style={{ border: '1px dotted #1a1a1a' }}>
+      {/* <div className="my-4 p-4" style={{ border: '1px dotted #1a1a1a' }}>
         <SkillForm profileId={profile._id} />
-      </div>
+      </div> */}
     </div>
   );
 };
